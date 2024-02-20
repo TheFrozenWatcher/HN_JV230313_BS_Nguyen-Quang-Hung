@@ -80,6 +80,7 @@ public class CatalogService implements IGenericService {
         Catalog catalogToRename = findById(idToRename);
         if (catalogToRename != null) {
             System.out.println("Nhập tên mới: ");
+                        sc.nextLine();
             String newCatalogName = sc.nextLine();
             catalogToRename.setCatalogName(newCatalogName);
             System.out.println("Danh mục đã được đổi tên thành: " + newCatalogName);
