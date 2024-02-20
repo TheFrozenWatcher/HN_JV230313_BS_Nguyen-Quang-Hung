@@ -22,7 +22,7 @@ public class ProductService implements IGenericService {
 
     public static Product findById(String productId) {
         for (Product product : products) {
-            if (product.getProductId()==productId) {
+            if (product.getProductId().equals(productId)) {
                 return product;
             }
         }
